@@ -54,6 +54,10 @@ body header div img{
 }
 .imagentrabajando{
     grid-area: imagentrabajando;
+    animation-name: expandir;
+    animation-duration: 180s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 .h1{
     grid-area: h1;
@@ -218,6 +222,15 @@ footer section{
     }
     .seccionformulario{
         display: block;
+    }
+
+}
+@keyframes girar{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
     }
 
 }
